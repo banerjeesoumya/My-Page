@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import React from "react";
 import { AuroraBackground } from "./ui/aurora-background";
 import { TextGenerateEffect } from "./ui/text-generateEffect";
+import { ShimmerButton } from "./ui/ShimmerButton";
+import { FaGithub } from "react-icons/fa";
 
 
 export function Hero() {
@@ -25,9 +27,9 @@ export function Hero() {
         <p className="text-center text-white md:tracking-wider mb-4 text-normal md:text-lg lg:text-2xl">
             Hi I&apos;m Soumya Banerjee, an Aspiring Software Developer
         </p>
-        <button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2">
-          Debug now
-        </button>
+        <a href="#work">
+          <ShimmerButton title="Show My Work" position="left" icon={<FaGithub />}/>
+        </a>
       </motion.div>
     </AuroraBackground>
   );
