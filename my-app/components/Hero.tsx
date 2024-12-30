@@ -12,7 +12,7 @@ export const Hero = () => {
         <p className="text-center text-white md:tracking-wider mb-4 text-normal md:text-lg lg:text-2xl">
             Hi I&apos;m Soumya Banerjee, an Aspiring Software Developer
         </p>
-        <a className='flex justify-center' href="#work">
+        <a className='flex justify-center mb-0' href="#work">
           <ShimmerButton title="Show My Work" position="left" icon={<FaGithub />}/>
         </a>
     </div>

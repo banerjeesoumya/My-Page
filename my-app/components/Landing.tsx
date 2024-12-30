@@ -5,6 +5,7 @@ import React from "react";
 import { AuroraBackground } from "./ui/aurora-background";
 import { Hero } from "./Hero";
 import { Navbar } from "./Navbar";
+import { Grid } from "./Grid";
 
 export function Landing() {
   return (
@@ -25,9 +26,12 @@ export function Landing() {
         </header>
 
         {/* Hero section centered */}
-        <main className="flex-grow flex justify-center">
+        <main className="flex justify-center">
           <Hero />
         </main>
+        <div className="w-full">
+          <Grid />
+        </div>
       </motion.div>
     </AuroraBackground>
   );
