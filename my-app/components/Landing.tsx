@@ -17,7 +17,7 @@ export function Landing() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="min-h-screen flex flex-col"
+        className="min-h-screen flex flex-col gap-4"
       >
         {/* Navbar at the top */}
         <header className="w-full">
@@ -25,7 +25,7 @@ export function Landing() {
         </header>
 
         {/* Hero section centered */}
-        <main className="flex-grow flex items-center justify-center">
+        <main className="flex-grow flex justify-center">
           <Hero />
         </main>
       </motion.div>
