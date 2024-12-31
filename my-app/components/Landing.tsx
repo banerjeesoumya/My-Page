@@ -5,7 +5,7 @@ import React from "react";
 import { AuroraBackground } from "./ui/aurora-background";
 import { Hero } from "./Hero";
 import { Navbar } from "./Navbar";
-import { Grid } from "./Grid";
+import { AboutMe } from "./AboutMe";
 
 export function Landing() {
   return (
@@ -30,7 +30,7 @@ export function Landing() {
           <Hero />
         </main>
         <div className="w-full">
-          <Grid />
+          <AboutMe />
         </div>
       </motion.div>
     </AuroraBackground>
