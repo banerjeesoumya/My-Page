@@ -23,7 +23,7 @@ export default {
       colors:{
         black: {
           DEFAULT: '#000',
-          100: '#000319'
+          100: '#1b1b1f'
         }
       },
       animation: {

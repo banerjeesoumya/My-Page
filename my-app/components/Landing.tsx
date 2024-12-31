@@ -1,11 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import React from "react";
 import { AuroraBackground } from "./ui/aurora-background";
-import { Hero } from "./Hero";
-import { Navbar } from "./Navbar";
-import { AboutMe } from "./AboutMe";
+import { TextGenerateEffect } from "./ui/text-generateEffect";
+import React from "react";
+import { FaGithub } from "react-icons/fa";
+import { ShimmerButton } from "./ui/ShimmerButton";
+
 
 export function Landing() {
   return (
@@ -18,21 +19,18 @@ export function Landing() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="min-h-screen flex flex-col gap-4"
+        className="absolute flex flex-col gap items-center justify-center px-4"
       >
-        {/* Navbar at the top */}
-        <header className="w-full">
-          <Navbar />
-        </header>
-
-        {/* Hero section centered */}
-        <main className="flex justify-center">
-          <Hero />
-        </main>
-        <div className="w-full">
-          <AboutMe />
-        </div>
       </motion.div>
+      <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
+          <TextGenerateEffect className="text-center-[40px] md:text-5xl lg:text-6xl" words="Serene in thought, building beyond the code" />
+        </div>
+        <p className="text-center text-white md:tracking-wider mb-4 text-normal md:text-lg lg:text-2xl">
+            Hi I&apos;m Soumya Banerjee, an Aspiring Software Developer
+        </p>
+        <a className='flex justify-center mb-0' href="#work">
+          <ShimmerButton title="Show My Work" position="left" icon={<FaGithub />}/>
+        </a>
     </AuroraBackground>
   );
 }
