@@ -5,7 +5,9 @@ export function AboutMe() {
   return (
     <div>
       <div className="flex justify-center text-white items-center w-full text-3xl mt-4 mb-4 font-bold">
-        <h1>About Me</h1>
+      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-gray-200 to-gray-400 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-gray-600">
+        About Me
+      </span>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4 place-items-center">
         <Cards 
