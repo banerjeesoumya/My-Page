@@ -15,7 +15,7 @@ export function AboutMe() {
 
         <Cards 
           title="Journey"
-          description="I'm a 3rd-year B.Tech Computer Science student at KIIT Deemed to be University, driven by a passion for learning and exploring new technologies. Currently, I'm focusing on mastering Data Structures and Algorithms while actively working on projects."
+          description="I'm a 3rd-year B.Tech Computer Science student at KIIT, passionate about learning new technologies, mastering Data Structures and Algorithms, and actively working on projects."
         />
 
         <div className="sm:col-span-full sm:flex sm:justify-center lg:col-span-1">

@@ -9,7 +9,7 @@ export const Cards = ({
     description?: string
   }) => {
   return (
-    <div className="flex flex-col items-start max-w-sm p-4 relative h-[20rem] sm:h-[25rem] md:h-[30rem]">
+    <div className="flex flex-col items-start max-w-sm mx-auto p-4 relative aspect-w-1 aspect-h-1 sm:aspect-w-1 sm:aspect-h-1 md:aspect-w-1 md:aspect-h-1">
         {/* <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
         <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
         <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
