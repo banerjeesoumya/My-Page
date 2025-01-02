@@ -25,6 +25,7 @@ const slugs = [
     "react",
     "html5",
     "css3",
+    "linux",
     "nodedotjs",
     "express",
     "nextdotjs",
