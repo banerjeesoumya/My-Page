@@ -2,6 +2,7 @@ import { AboutMe } from "@/components/AboutMe";
 import { Landing } from "@/components/Landing";
 import { Navbar } from "@/components/Navbar";
 import { Projects } from "@/components/Projects";
+import { Socials } from "@/components/Socials";
 import { TechStack } from "@/components/TechStack";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         <AboutMe />
         <Projects />
         <TechStack />
+        <Socials />
       </div>
     </main>
   );
