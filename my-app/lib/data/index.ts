@@ -25,7 +25,7 @@ export const projects = [
         title: "Genetic Algorithm",
         description:
             "The Genetic Algorithm is used to handle difficult Knapsack issues, with accuracy determined by the number of iterations.",
-        liveLink: "https://meta.com",
+        liveLink: "",
         githubLink: "https://github.com/banerjeesoumya/Genetic-Algorithm",
         iconLists: ["/assets/tech-icons/logos--java.svg"]
     },

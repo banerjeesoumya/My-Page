@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import { IconBrandGithub } from "@tabler/icons-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
@@ -56,16 +55,10 @@ export const HoverEffect = ({
             <CardImage img={item.img} />
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
-            <div className="flex items-center justify-between mt-7 mb-3">
-              <div className="flex items-center">
-                <CardIcons icons={item.iconLists} />
-              </div>
-              <div className="flex-justify-center items-center">
-                <CardButtons link={item.githubLink} label="Github "/>
-              </div>
-            </div>
-            <div>
-              <CardButtons link={item.liveLink} label="Live" />
+            <CardIcons icons={item.iconLists} />
+            <div className="flex justify-center gap-4 mt-6">
+              {item.liveLink && <CardButtons link={item.liveLink} label="Live" />}
+              {item.githubLink && <CardButtons link={item.githubLink} label="GitHub" />}
             </div>
           </Card>
         </div>
@@ -102,14 +95,15 @@ export const CardImage = ({
   img: string;
   className?: string;
 }) => {
-  const defaultIcon = "https://upload.wikimedia.org/wikipedia/commons/f/ff/Logo_of_Github.jpg";
+  const defaultIcon = "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png";
 
   return (
     <div className={cn("w-full flex justify-center mb-4", className)}>
       <img
         src={img || defaultIcon}
         alt="Card Image"
-        className="relative w-full h-full overflow-hidden lg:rounded-3xl"/>
+        className="relative w-full h-full overflow-hidden lg:rounded-3xl"
+      />
     </div>
   );
 };
@@ -122,7 +116,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-zinc-100 font-bold lg:text-2xl md:text-xl text-base line-clamp-1", className)}>
+    <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-2 text-lg", className)}>
       {children}
     </h4>
   );
@@ -138,7 +132,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "text-zinc-400 lg:text-md lg:font-normal font-light text-sm line-clamp-3 tracking-wide leading-relaxed mt-4",
+        "text-zinc-400 tracking-wide leading-relaxed text-sm mt-4",
         className
       )}
     >
@@ -157,20 +151,17 @@ export const CardIcons = ({
   return (
     <div
       className={cn(
-        "flex justify-center items-center",
+        "flex justify-center items-center flex-wrap gap-3 mt-6",
         className
       )}
     >
       {icons.map((icon, idx) => (
-        <div key={icon} className="w-8 h-8 border border-white/[0.2] rounded-full bg-black-100 lg:w-10 lg:h-10 flex justify-center items-center" style={{
-          transform: `translateX(-${5 * idx * 2}px)`
-        }}>
-          <img
+        <img
           key={idx}
           src={icon}
           alt={`Icon ${idx + 1}`}
-          className="p-2"/>
-        </div>
+          className="w-8 h-8"
+        />
       ))}
     </div>
   );
@@ -191,11 +182,10 @@ export const CardButtons = ({
       target="_blank"
       rel="noopener noreferrer"
       className={cn(
-        "px-4 py-2 flex lg:text-xl md:text-xs text-sm bg-cyan-500 text-purple rounded-lg hover:bg-cyan-600 transition",
+        "px-4 py-2 text-sm bg-cyan-500 text-white rounded-lg hover:bg-cyan-600 transition",
         className
       )}
     >
-      <IconBrandGithub />
       {label}
     </a>
   );
