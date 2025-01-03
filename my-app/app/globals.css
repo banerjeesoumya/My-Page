@@ -2,3 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+/* For light mode */
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333; /* Dark color for scrollbar thumb */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Light color for the track */
+}
+
+/* For dark mode */
+@media (prefers-color-scheme: dark) {
+    ::-webkit-scrollbar-thumb {
+        background-color: #555; /* Darker color for scrollbar thumb in dark mode */
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #222; /* Darker color for the track in dark mode */
+    }
+}
+  
