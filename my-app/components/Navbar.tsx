@@ -22,7 +22,7 @@ export function Navbar() {
     },
 
     {
-      title: "Products",
+      title: "About Me",
       icon: (
         <IconUserBolt className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
