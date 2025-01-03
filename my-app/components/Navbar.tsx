@@ -53,7 +53,7 @@ export function Navbar() {
   ];
   return (
     <div className="absolute top-0 left-0 right-0 z-10 flex items-center justify-center h-[6rem] w-full">
-      <FloatingDock 
+      <FloatingDock mobileClassName="fixed top-1/2 transform -translate-y-[-1rem] left-4" desktopClassName="fixed top-0 m-3"
         items={links}
       />
     </div>

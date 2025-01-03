@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* For light mode */
+
 html {
     scroll-behavior: smooth;
 }
@@ -12,22 +12,22 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #333; /* Dark color for scrollbar thumb */
+    background-color: #333; 
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f0f0f0; /* Light color for the track */
+    background: #f0f0f0; 
 }
 
 /* For dark mode */
 @media (prefers-color-scheme: dark) {
     ::-webkit-scrollbar-thumb {
-        background-color: #555; /* Darker color for scrollbar thumb in dark mode */
+        background-color: #555; 
     }
 
     ::-webkit-scrollbar-track {
-        background: #222; /* Darker color for the track in dark mode */
+        background: #222; 
     }
 }
   
