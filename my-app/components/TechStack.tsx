@@ -1,3 +1,4 @@
+import { techs } from "@/lib/data/tech-stack";
 import { IconCloud } from "./ui/icons-cloud";
 
 export const TechStack = () => {
@@ -11,37 +12,10 @@ export const TechStack = () => {
         <div className="flex justify-center items-center">
           <div className="relative flex h-[500px] w-full max-w-lg items-center justify-center overflow-hidden rounded-lg bg-background px-8">
             {/* IconCloud Component */}
-            <IconCloud iconSlugs={slugs} />
+            <IconCloud iconSlugs={techs} />
           </div>
         </div>
       </div>
     );
   };
 
-const slugs = [
-    "typescript",
-    "javascript",
-    "java",
-    "react",
-    "html5",
-    "css3",
-    "linux",
-    "nodedotjs",
-    "express",
-    "nextdotjs",
-    "prisma",
-    "aws",
-    "postgresql",
-    "vercel",
-    "docker",
-    "git",
-    "github",
-    "visualstudiocode",
-    "mongodb",
-    "hono",
-    "cloudflare",
-    "tailwindcss",
-    "flask",
-    "python",
-    "render"
-];

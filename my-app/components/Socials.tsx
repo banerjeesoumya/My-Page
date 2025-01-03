@@ -1,47 +1,12 @@
 import { cn } from '@/lib/utils';
 import React from 'react';
 import { Marquee } from './ui/moving-cards';
+import Image from 'next/image';
+import { socials } from '@/lib/data/socials';
 
-const reviews = [
-  {
-    name: "LinkedIn",
-    username: "@banerjee-soumya",
-    body: "Connect with me on LinkedIn for professional networking!",
-    img: "/assets/socials-icon/linkedin.png",
-    redirectTo: "https://www.linkedin.com/in/banerjee-soumya/",
-  },
-  {
-    name: "Github",
-    username: "@banerjeesoumya",
-    body: "Check out my GitHub profile for some cool projects!",
-    img: "/assets/socials-icon/github.png",
-    redirectTo: "https://github.com/banerjeesoumya",
-  },
-  {
-    name: "LeetCode",
-    username: "@the_dark_sunshine",
-    body: "If you are wondering how good I am at DSA, check out my LeetCode profile!",
-    img: "/assets/socials-icon/leetcode.png",
-    redirectTo: "https://leetcode.com/u/the_dark_sunshine/",
-  },
-  {
-    name: "Twitter (X)",
-    username: "@drk_sunshne",
-    body: "Follow me on Twitter for some cool tweets and birbing!",
-    img: "/assets/socials-icon/twitter.png",
-    redirectTo: "https://x.com/drk_sunshne",
-  },
-  {
-    name: "Instagram",
-    username: "@omnipresent_species",
-    body: "Follow me on Instagram for some 'occasional' cool stories!",
-    img: "/assets/socials-icon/Instagram.png",
-    redirectTo: "https://www.instagram.com/",
-  },
-];
 
-const firstRow = reviews.slice(0, reviews.length);
-const secondRow = reviews.slice(reviews.length / 2);
+const firstRow = socials.slice(0, socials.length);
+const secondRow = socials.slice(socials.length / 2);
 
 const ReviewCard = ({
   img,
@@ -67,7 +32,7 @@ const ReviewCard = ({
     >
       <a href={redirectTo} target="_blank" rel="noopener noreferrer">
         <div className="flex flex-row items-center gap-2">
-          <img
+          <Image
             className="rounded-full"
             width="32"
             height="32"
@@ -105,8 +70,8 @@ export const Socials = () => {
 
         <Marquee reverse pauseOnHover className="[--duration:20s]">
           <div className="flex justify-start gap-4">
-            {secondRow.map((review) => (
-              <ReviewCard key={review.username} {...review} />
+            {secondRow.map((socials) => (
+              <ReviewCard key={socials.username} {...socials} />
             ))}
           </div>
         </Marquee>

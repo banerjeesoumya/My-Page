@@ -3,12 +3,11 @@
 import React from "react";
 
 import {
-  IconBrandGithub,
-  IconBrandX,
-  IconExchange,
+  IconCode,
+  IconGizmo,
   IconHome,
-  IconNewSection,
-  IconTerminal2,
+  IconTerminal,
+  IconUserBolt,
 } from "@tabler/icons-react";
 import { FloatingDock } from "./ui/floatingDock";
 
@@ -19,50 +18,42 @@ export function Navbar() {
       icon: (
         <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "#home",
     },
 
     {
       title: "Products",
       icon: (
-        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconUserBolt className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "#about",
     },
     {
-      title: "Components",
+      title: "My Projects",
       icon: (
-        <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconTerminal className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "#projects",
     },
     {
-      title: "Changelog",
+      title: "My Tech Stack",
       icon: (
-        <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconCode className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "#techstack",
     },
 
     {
-      title: "Twitter",
+      title: "Socials",
       icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconGizmo className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
-    },
-    {
-      title: "GitHub",
-      icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
+      href: "#connect",
     },
   ];
   return (
     <div className="absolute top-0 left-0 right-0 z-10 flex items-center justify-center h-[6rem] w-full">
-      <FloatingDock
-        mobileClassName="translate-y-20" // only for demo, remove for production
+      <FloatingDock 
         items={links}
       />
     </div>
