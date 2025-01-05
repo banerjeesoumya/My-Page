@@ -4,6 +4,7 @@ import React from "react";
 
 import {
   IconCode,
+  IconFileCv,
   IconGizmo,
   IconHome,
   IconTerminal,
@@ -41,6 +42,13 @@ export function Navbar() {
         <IconCode className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#techstack",
+    },
+    {
+      title: "My Resume",
+      icon: (
+        <IconFileCv className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "https://drive.google.com/file/d/1yAFc-I93ZxfS0paPe2G628SnHxGMVUIz/view?usp=drive_link",
     },
 
     {
