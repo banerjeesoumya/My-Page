@@ -48,7 +48,7 @@ export function Navbar() {
       icon: (
         <IconFileCv className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://drive.google.com/file/d/1yAFc-I93ZxfS0paPe2G628SnHxGMVUIz/view?usp=drive_link",
+      href: "https://drive.google.com/file/d/1xbcmDiIGslJzTzrhhyol8oiUghPz3EgV/view?usp=sharing",
     },
 
     {
