@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { FaXTwitter, FaGithub, FaLinkedin, FaBuilding, FaLaptopCode } from "react-icons/fa6";
+import { FaXTwitter, FaGithub, FaLinkedin, FaBuilding, FaLaptopCode, FaRegFilePdf } from "react-icons/fa6";
 // import GitHubCalendar from "react-github-calendar";
 import GithubCalender from "@/components/ui/github-calendar";
 import { FloatingDock } from "@/components/ui/floating-dock";
@@ -19,7 +19,7 @@ const experiences: Experience[] = [
     company: "Accenture",
     location: "India",
     role: "ASE Summer Intern",
-    period: "May 2025 - July 2025",
+    period: "May 2025 - Present",
   },
 ];
 
@@ -28,6 +28,7 @@ const dockItems = [
   { title: "Projects", icon: <FaLaptopCode className="w-6 h-6" />, href: "#projects" },
   { title: "Tech Stack", icon: <IconCode className="w-6 h-6" />, href: "#techstack" },
   { title: "Contact", icon: <IconMail className="w-6 h-6" />, href: "#contact" },
+  { title: "Resume", icon: <FaRegFilePdf className="w-6 h-6" />, href: "/assets/resume.pdf" },
 ];
 
 export const ProfileSection: React.FC = () => {

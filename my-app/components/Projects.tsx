@@ -25,7 +25,7 @@ export const ProjectsSection: React.FC = () => {
                   alt="tech"
                   width={24}
                   height={24}
-                  className="inline-block"
+                  className="inline-block filter grayscale brightness-125"
                 />
               ))}
             </div>
