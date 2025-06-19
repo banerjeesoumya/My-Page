@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { FaXTwitter, FaGithub, FaLinkedin, FaBuilding, FaLaptopCode } from "react-icons/fa6";
-import GitHubCalendar from "react-github-calendar";
+// import GitHubCalendar from "react-github-calendar";
+import GithubCalender from "@/components/ui/github-calendar";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import { IconHome, IconCode, IconMail } from "@tabler/icons-react";
 
@@ -87,17 +88,7 @@ export const ProfileSection: React.FC = () => {
         {/* Dynamic GitHub Contribution Graph */}
         <div className="mt-4 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900">
           <div className="min-w-[500px]">
-            <GitHubCalendar
-              username="banerjeesoumya"
-              blockSize={14}
-              blockMargin={4}
-              color="#636363"
-              fontSize={13}
-              theme={{
-                light: ["#23272a", "#636363", "#a3a3a3", "#d4d4d4", "#f4f4f5"],
-                dark: ["#161616", "#23272a", "#636363", "#a3a3a3", "#f4f4f5"],
-              }}
-            />
+            <GithubCalender />
           </div>
         </div>
       </section>
