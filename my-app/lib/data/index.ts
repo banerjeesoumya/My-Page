@@ -1,6 +1,16 @@
 export const projects = [
     {
-        id: 1,  
+        id: 1,
+        img: "/assets/project-bg/Portfolio.png",
+        title: "EquiHealth",
+        description:
+            "A web application for managing and tracking health and fitness data.",
+        liveLink: "https://equi-health.vercel.app/",
+        githubLink: "https://github.com/banerjeesoumya/EquiHealth",
+        iconLists: ["/assets/tech-icons/logos--hono.svg", "/assets/tech-icons/devicon--postgresql.svg", "/assets/tech-icons/vscode-icons--file-type-prisma.svg", "/assets/tech-icons/devicon--cloudflare.svg", "/assets/tech-icons/devicon--react.svg", "/assets/tech-icons/devicon--tailwindcss.svg", "/assets/tech-icons/jupyter.svg", "/assets/tech-icons/flask.svg", "/assets/tech-icons/python.svg"]
+    },
+    {
+        id: 2,  
         img: "/assets/project-bg/ThoughtStream.png",
         title: "ThoughtStream",
         description:
@@ -10,7 +20,7 @@ export const projects = [
         iconLists: ["/assets/tech-icons/logos--hono.svg", "/assets/tech-icons/devicon--postgresql.svg", "/assets/tech-icons/vscode-icons--file-type-prisma.svg", "/assets/tech-icons/devicon--cloudflare.svg", "/assets/tech-icons/devicon--react.svg", "/assets/tech-icons/devicon--tailwindcss.svg"]
     },
     {
-        id: 2,
+        id: 3,
         img: "assets/project-bg/PayZap.png",
         title: "PayZap",
         description:
@@ -20,7 +30,7 @@ export const projects = [
         iconLists: ["/assets/tech-icons/skill-icons--expressjs-dark.svg", "/assets/tech-icons/skill-icons--nodejs-dark.svg", "/assets/tech-icons/skill-icons--mongodb.svg", "/assets/tech-icons/devicon--react.svg", "/assets/tech-icons/devicon--tailwindcss.svg"]
       },
     {
-        id: 3,
+        id: 4,
         img: "assets/project-bg/GenAlgo.png",
         title: "Genetic Algorithm",
         description:

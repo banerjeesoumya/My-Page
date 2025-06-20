@@ -28,7 +28,7 @@ const dockItems = [
   { title: "Projects", icon: <FaLaptopCode className="w-6 h-6" />, href: "#projects" },
   { title: "Tech Stack", icon: <IconCode className="w-6 h-6" />, href: "#techstack" },
   { title: "Contact", icon: <IconMail className="w-6 h-6" />, href: "#contact" },
-  { title: "Resume", icon: <FaRegFilePdf className="w-6 h-6" />, href: "/assets/resume.pdf" },
+  { title: "Resume", icon: <FaRegFilePdf className="w-6 h-6" />, href: "/assets/SoumyaBanerjee.pdf" },
 ];
 
 export const ProfileSection: React.FC = () => {
@@ -63,13 +63,13 @@ export const ProfileSection: React.FC = () => {
           ))}
         </div>
         <div className="flex gap-3 mb-2 justify-center md:justify-start w-full">
-          <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">
+          <a href="https://x.com/drk_sunshne" target="_blank" rel="noopener noreferrer" aria-label="X">
             <FaXTwitter className="w-6 h-6 text-white hover:text-gray-400" />
           </a>
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <a href="https://github.com/banerjeesoumya" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub className="w-6 h-6 text-white hover:text-gray-400" />
           </a>
-          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/banerjee-soumya/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FaLinkedin className="w-6 h-6 text-white hover:text-gray-400" />
           </a>
         </div>

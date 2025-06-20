@@ -4,6 +4,7 @@ import { Analytics } from '@vercel/analytics/next';
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Spotlight } from "@/components/ui/spotlight-new";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({
             <div className="relative z-10">
               {children}
             </div>
+            <Footer />
           </div>
         </ThemeProvider>
         <Analytics />
