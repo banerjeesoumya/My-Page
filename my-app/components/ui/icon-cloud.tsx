@@ -24,8 +24,8 @@ export const cloudProps: Omit<ICloud, "children"> = {
       justifyContent: "center",
       alignItems: "center",
       width: "100%",
-      height: "500px",
-      paddingTop: 40,
+      height: "280px",
+      paddingTop: 0,
     },
   },
   options: {
@@ -50,15 +50,13 @@ export const renderCustomIcon = (
   theme: string = "dark",
   imageArray?: string[],
 ) => {
-  const bgHex = theme === "light" ? "#f3f2ef" : "#080510";
-  const fallbackHex = theme === "light" ? "#6e6e73" : "#ffffff";
-  const minContrastRatio = theme === "dark" ? 2 : 1.2;
-
+  // Force all icons to be mid-gray for both themes
+  const customColor = "#a3a3a3";
   return renderSimpleIcon({
     icon,
-    bgHex,
-    fallbackHex,
-    minContrastRatio,
+    bgHex: customColor,
+    fallbackHex: customColor,
+    minContrastRatio: 1,
     size: 60,
     aProps: {
       href: undefined,

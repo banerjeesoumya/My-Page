@@ -1,48 +1,27 @@
-import { cn } from "@/lib/utils";
-import { IconBrandGithub, IconBrandSuperhuman } from "@tabler/icons-react";
+"use client";
+import React from "react";
+import { Spotlight } from "@/components/ui/spotlight-new";
+import Link from "next/link";
 
-export const Footer = () => {
+const Footer: React.FC = () => {
   return (
-    <div className="pt-5">
-      <footer
-        className={cn(
-          "bg-gray-900 text-white py-8 px-4",
-          "flex flex-col md:flex-row items-center justify-between"
-        )}
-      >
-        {/* Left Section: Hero Icon and Tagline */}
-        <div className="mb-6 md:mb-0 flex flex-col items-center md:items-start">
-          <a href="#home" className="flex items-center gap-2 hover:text-cyan-400 transition">
-            <IconBrandSuperhuman size={48} />
-            <span className="text-sm">Back to Home</span>
-          </a>
-          <p className="text-sm text-gray-400 pt-2">
-            Crafting innovative solutions, one line of code at a time.
-          </p>
-        </div>
-
-
-        <div className="mb-6 md:mb-0 text-center">
-          <a
-            href="https://github.com/banerjeesoumya/My-Page"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-sm hover:text-cyan-400 transition"
-          >
-            <IconBrandGithub size={24} />
-            Peek into the Codebase on GitHub
-          </a>
-        </div>
-
-        <div className="text-center md:text-right">
-          <p className="text-sm text-gray-400">
-            Crafted with ❤️ and ☕ by Soumya Banerjee.
-          </p>
-          <p className="text-xs text-gray-500 pt-2">
-            Thank you for visiting my portfolio!
-          </p>
-        </div>
-      </footer>
-    </div>
+    <footer className="relative w-full py-4 px-4 flex flex-col md:flex-row items-center justify-between bg-transparent overflow-hidden z-10 text-sm">
+      {/* Spotlight background */}
+      <div className="absolute inset-0 w-full h-full z-0 pointer-events-none">
+        <Spotlight />
+      </div>
+      <div className="flex flex-col items-start z-10">
+        <Link href="https://soumyabanerjee.tech/#home" className="flex items-center gap-2 text-white font-semibold mb-1">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="6" fill="#fff" fillOpacity="0.05"/><path d="M7.5 12L12 7.5L16.5 12" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M12 16.5V7.5" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          <span className="text-blue-300 bg-gray-800 rounded px-2 py-1 text-xs inline-block">Back to Home</span>
+        </Link>
+        <span className="text-gray-300 text-xs mb-1">Crafting innovative solutions, one line of code at a time.</span>
+      </div>
+      <div className="flex flex-col items-end z-10 mt-2 md:mt-0">
+        <span className="text-gray-400 text-xs">Soumya © 2025  |  Portfolio. All rights reserved.</span>
+      </div>
+    </footer>
   );
 };
+
+export default Footer; 

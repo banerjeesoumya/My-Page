@@ -15,6 +15,7 @@ export const techs = [
     "vercel",
     "docker",
     "git",
+    "go",
     "github",
     "visualstudiocode",
     "mongodb",

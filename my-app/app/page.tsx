@@ -1,33 +1,19 @@
-import { AboutMe } from "@/components/AboutMe";
-import { Footer } from "@/components/Footer";
-import { Landing } from "@/components/Landing";
-import { Navbar } from "@/components/Navbar";
-import { Projects } from "@/components/Projects";
-import { Socials } from "@/components/Socials";
-import { TechStack } from "@/components/TechStack";
+import { ProfileSection } from "@/components/ProfileSection";
+import { ProjectsSection } from "@/components/Projects";
+import TechStack from "@/components/TechStack";
+import Connect from "@/components/Connect";
+import Achievements from "@/components/Achievements";
 
 export default function Home() {
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto dark">
-      <div className="max-w-7xl w-full">
-        <Navbar />
-        <div id="home">
-          <Landing />
-        </div>
-        <div id="about">
-          <AboutMe />
-        </div>
-        <div id="projects">
-          <Projects />
-        </div>
-        <div id="techstack">
-          <TechStack />
-        </div>
-        <div id="connect">
-          <Socials />
-        </div>
-        <Footer />
+    <main className="relative flex flex-col items-center justify-center overflow-hidden mx-auto">
+      <ProfileSection />
+      <div className="w-full max-w-5xl mx-auto mt-0">
+        <ProjectsSection />
       </div>
+      <TechStack />
+      <Achievements />
+      <Connect />
     </main>
   );
 }
