@@ -37,7 +37,7 @@ const connectItems = [
 
 const Connect: React.FC = () => {
   return (
-    <section id="connect" className="w-full max-w-5xl mx-auto mt-8 md:mt-12 mb-8 px-4">
+    <section id="contact" className="w-full max-w-5xl mx-auto mt-8 md:mt-12 mb-8 px-4">
       <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Connect</h2>
       <div className="flex flex-col gap-4">
         {connectItems.map((item) => (

@@ -10,7 +10,7 @@ const TechStack: React.FC = () => {
   const [failedIcons, setFailedIcons] = useState<Record<string, boolean>>({});
 
   return (
-    <section id="stack" className="w-full max-w-5xl mx-auto mt-8 md:mt-12 mb-8 px-4">
+    <section id="techstack" className="w-full max-w-5xl mx-auto mt-8 md:mt-12 mb-8 px-4">
       <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Stack</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-4">
         {techs.map((tech) => (
@@ -35,9 +35,6 @@ const TechStack: React.FC = () => {
           )
         ))}
       </div>
-      <p className="text-gray-300 text-sm md:text-base max-w-3xl mt-6">
-        My Strength is building core web applications which solve problems and are scalable. I&apos;m currently working with Go, Typescript and Devops.
-      </p>
     </section>
   );
 };
