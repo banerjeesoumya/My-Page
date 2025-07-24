@@ -1,12 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import { FaXTwitter, FaGithub, FaLinkedin, FaBuilding, FaLaptopCode, FaRegFilePdf } from "react-icons/fa6";
-// import GitHubCalendar from "react-github-calendar";
 import GithubCalender from "@/components/ui/github-calendar";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import { IconHome, IconCode, IconMail } from "@tabler/icons-react";
 
-// Experience type for future extensibility
 interface Experience {
   company: string;
   location?: string;
@@ -19,7 +17,7 @@ const experiences: Experience[] = [
     company: "Accenture",
     location: "India",
     role: "ASE Summer Intern",
-    period: "May 2025 - Present",
+    period: "May 2025 - July 2025",
   },
 ];
 
@@ -34,9 +32,7 @@ const dockItems = [
 export const ProfileSection: React.FC = () => {
   return (
     <div className="relative flex flex-col md:flex-row min-h-[70vh] w-full max-w-5xl mx-auto">
-      {/* Floating Dock Navbar */}
       <FloatingDock items={dockItems} />
-      {/* Sidebar */}
       <aside className="flex flex-col items-center md:items-start self-stretch py-8 px-2 min-w-[150px] gap-0 w-full md:w-auto">
         <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-gray-700 mb-6 mx-auto md:mx-0">
           <Image src="/assets/Self1.jpg" alt="Avatar" width={80} height={80} />
@@ -45,7 +41,6 @@ export const ProfileSection: React.FC = () => {
           <a href="#" className="text-white">Home</a>
           <a href="#projects" className="text-gray-400 hover:text-white">Projects</a>
         </nav>
-        {/* Experience Section */}
         <div className="w-full flex flex-col gap-2 mb-6 items-center md:items-start">
           {experiences.map((exp, idx) => (
             <div key={idx} className="flex flex-col gap-0.5 mb-2 items-center md:items-start">
